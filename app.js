@@ -1,11 +1,7 @@
-const cardComponent = document.querySelector('.card-wrapper');
-
 window.addEventListener('DOMContentLoaded', () => {
-  cardComponent.innerHTML = generateCard();
-});
-
-function generateCard() {
-  return `        <div class="card">
+  const cardComponent = document.querySelector('.card-wrapper');
+  function generateCard() {
+    return `        <div class="card">
           <div class="card__head">
             <img
               class="card__qr"
@@ -23,4 +19,6 @@ function generateCard() {
             </p>
           </div>
         </div>`;
-}
+  }
+  cardComponent.innerHTML = generateCard();
+});
